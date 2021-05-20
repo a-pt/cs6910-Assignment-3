@@ -11,9 +11,9 @@ Beam Search              :0,3,5,6
 We have also used the following as the hyperparameters.<br/><br/>
 
 * *Dropout*                : The Dropout layer randomly sets input units to 0 with a frequency of rate at each step during training time, which helps prevent overfitting.<br/><br/>
-* *Reccurrent Dropout*     : 
-* *Beam Search*            :
-* *Cell Tyoe*              :
+* *Reccurrent Dropout*     : Just as with regular dropout, recurrent dropout has a regularizing effect and can prevent overfitting. It's used in Keras by simply passing an      argument to the LSTM or RNN layer.<br/><br/>
+* *Beam Search*            : The beam search strategy generates the translation word by word from left-to-right while keeping a fixed number (beam) of active candidates at each time step. By increasing the beam size, the translation performance can increase at the expense of significantly reducing the decoder speed.<br/><br/>
+* *Cell Tyoe*              : 3 types of Recurrent Neural network cells- LSTM, GRU and Simple RNN.<br/><br/>
 
 At dense layer we have used "softmax" as the activation function.<br/><br/>
 The implementation is linked with wandb and hyper parameter tuning can be done effectively by changing the values of sweep confiiguration in the script. The configuration used for parameter searching are as follows.<br/><br/>
