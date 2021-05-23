@@ -19,15 +19,15 @@ Funtions used:
 At dense layer we have used "softmax" as the activation function.<br/><br/>
 The implementation is linked with wandb and hyper parameter tuning can be done effectively by changing the values of sweep confiiguration in the script. The configuration used for parameter searching are as follows.<br/><br/>
 ```
-'epoch' : [2,5,10,15,20]
-'batch_size': [64]
-'dropout' : [0.1,0.01,0.0]
-'recc_dropout' : [0.1,0.01,0.0]
-'beam_search' : [0,3,5,6]
-'layers' : [3,4]
+'epoch'          : [2,5,10,15,20]
+'batch_size'     : [64]
+'dropout'        : [0.1,0.01,0.0]
+'recc_dropout'   : [0.1,0.01,0.0]
+'beam_search'    : [0,3,5,6]
+'layers'         : [3,4]
 'hidden_neurons' : [64,126,256]
-'cell_type' : ['RNN','GRU','LSTM']
-'optimizer_fn' : ['adam','rmsprop']
+'cell_type'      : ['RNN','GRU','LSTM']
+'optimizer_fn'   : ['adam','rmsprop']
 ```
 
 The code Attention.ipynb implements Reccurent Neural Network along with attention mechanism, on a subset of dakshina dataset with the following functionalities..<br/><br/>
@@ -48,15 +48,15 @@ The best configuration that gave maximum accuracy for the RNN model is :</br>
 ``` 
 Word level Validation Accuracy : 52.7%
 
-epoch	 			     : 15
-batch_size			  : 64
-dropout 			    : 0.1
-beam_search			 : 6
-layers				     : 3
-hidden_neurons	: 256
-recc_dropout		 : 0.1
-cell_type			   : GRU
-optimizer_fn		 : adam
+'epoch'	 			     : 15
+'batch_size'			  : 64
+'dropout' 			    : 0.1
+'beam_search'			 : 6
+'layers'				     : 3
+'hidden_neurons'	: 256
+'recc_dropout'		 : 0.1
+'cell_type'			   : GRU
+'optimizer_fn'		 : adam
 ```
 
 The best configuration that gave maximum accuracy for the Attention model is :</br>
