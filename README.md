@@ -48,15 +48,15 @@ The best configuration that gave maximum accuracy for the RNN model is :</br>
 ``` 
 Word level Validation Accuracy : 52.7%
 
-epoch	 			    : 15
-batch_size			: 64
-dropout 			  : 0.1
-beam_search			: 6
-layers				  : 3
+epoch	 			     : 15
+batch_size			  : 64
+dropout 			    : 0.1
+beam_search			 : 6
+layers				     : 3
 hidden_neurons	: 256
-recc_dropout		: 0.1
-cell_type			  : GRU
-optimizer_fn		: adam
+recc_dropout		 : 0.1
+cell_type			   : GRU
+optimizer_fn		 : adam
 ```
 
 The best configuration that gave maximum accuracy for the Attention model is :</br>
