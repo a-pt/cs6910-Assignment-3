@@ -56,7 +56,7 @@ Word level Validation Accuracy : 52.7%
 'cell_type'     : GRU
 'optimizer_fn'  : adam
 
-
+```
 The best configuration that gave maximum accuracy for the Attention model is :</br>
 ``` 
 Accuracy : 54.8%
